@@ -84,5 +84,47 @@
     "submit": "Submit for Review",
     "yes": "Yes",
     "no": "No"
+  },
+  "book": {
+    "title": "Book a Consultation",
+    "subtitle": "A personal 20-minute call — we'll understand your situation and present the right path.",
+    "noCalendly": "To book a call, contact us on WhatsApp."
+  },
+  "payment": {
+    "title": "Choose Payment Plan",
+    "subtitle": "Select your preferred payment method.",
+    "singlePayment": "Single Payment",
+    "installments": "Installments",
+    "save": "Save",
+    "perMonth": "/month",
+    "months": "months",
+    "includesVat": "VAT included",
+    "chooseSingle": "Choose Single Payment",
+    "chooseInstallments": "Choose Installments",
+    "recommended": "Recommended"
+  },
+  "welcome": {
+    "title": "Welcome to Belong!",
+    "subtitle": "We're glad you joined. Here's what to do now:",
+    "step1": "Sign Power of Attorney",
+    "step2": "Sign Fee Agreement",
+    "step3": "Upload Documents",
+    "step4": "Save our WhatsApp number",
+    "whatsappNote": "You'll receive a WhatsApp message from our team within minutes.",
+    "uploadDocs": "Upload Documents"
+  },
+  "documents": {
+    "title": "Document Upload",
+    "subtitle": "Upload the required documents by category.",
+    "passport": "Passport",
+    "photos": "Passport Photos",
+    "residency": "Proof of Residency",
+    "employment": "Employment Documents",
+    "children": "Children's Documents",
+    "other": "Additional Documents",
+    "dragDrop": "Drag files here or click to browse",
+    "maxSize": "Up to 10MB per file (PDF, JPG, PNG)",
+    "uploaded": "Uploaded successfully",
+    "uploading": "Uploading..."
   }
 }
