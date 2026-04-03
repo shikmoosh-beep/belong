@@ -10,6 +10,26 @@ export type ProcessStep = {
   description: { he: string; en: string };
 };
 
+export type CountryStat = {
+  label: { he: string; en: string };
+  value: string;
+  icon?: string;
+};
+
+export type ProCon = {
+  he: string;
+  en: string;
+};
+
+export type CountryInfo = {
+  stats: CountryStat[];
+  pros: ProCon[];
+  cons: ProCon[];
+  funFacts: ProCon[];
+  healthcareNote: { he: string; en: string };
+  costOfLiving: { he: string; en: string };
+};
+
 export type Country = {
   slug: string;
   name: { he: string; en: string };
@@ -19,6 +39,7 @@ export type Country = {
   language: string;
   currency: string;
   immigrationAuthority: { he: string; en: string };
+  info?: CountryInfo;
   visaTypes: VisaType[];
   process: ProcessStep[];
 };
