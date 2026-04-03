@@ -101,7 +101,9 @@
     "includesVat": "VAT included",
     "chooseSingle": "Choose Single Payment",
     "chooseInstallments": "Choose Installments",
-    "recommended": "Recommended"
+    "recommended": "Recommended",
+    "restricted": "This page requires authorization",
+    "restrictedDesc": "To view payment options, contact us on WhatsApp or book a consultation call."
   },
   "welcome": {
     "title": "Welcome to Belong!",

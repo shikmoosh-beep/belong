@@ -101,7 +101,9 @@
     "includesVat": "כולל מע\"מ",
     "chooseSingle": "בחר תשלום אחד",
     "chooseInstallments": "בחר תשלומים",
-    "recommended": "מומלץ"
+    "recommended": "מומלץ",
+    "restricted": "דף זה דורש הרשאה",
+    "restrictedDesc": "כדי לצפות באפשרויות התשלום, צור איתנו קשר בוואטסאפ או קבע שיחת ייעוץ."
   },
   "welcome": {
     "title": "ברוכים הבאים ל-Belong!",

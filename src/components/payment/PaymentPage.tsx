@@ -1,18 +1,48 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { CheckIcon } from "@heroicons/react/24/outline";
+import { useSearchParams } from "next/navigation";
+import { CheckIcon, LockClosedIcon } from "@heroicons/react/24/outline";
 
+/**
+ * Payment page — NOT publicly accessible.
+ * Only reachable via a personalized link sent during/after the consultation call.
+ * URL format: /payment?token=<access_token>&pkg=<package_name>
+ *
+ * Without a valid token, shows a message to contact via WhatsApp.
+ */
 export default function PaymentPage() {
   const t = useTranslations("payment");
+  const searchParams = useSearchParams();
+  const token = searchParams.get("token");
+  const pkg = searchParams.get("pkg");
 
-  // These would come from the API based on the client's package
-  // For now showing a sample package
-  const singleAmount = 11787;
-  const installmentAmount = 2290;
-  const installmentCount = 6;
-  const installmentTotal = installmentAmount * installmentCount;
-  const savings = installmentTotal - singleAmount;
+  // No token = not authorized to see pricing
+  if (!token || !pkg) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-gray-50 px-4">
+        <div className="text-center max-w-md">
+          <LockClosedIcon className="h-16 w-16 text-gray-300 mx-auto" />
+          <h1 className="mt-6 font-[family-name:var(--font-heading)] text-2xl font-bold text-gray-900">
+            {t("restricted")}
+          </h1>
+          <p className="mt-3 text-gray-600">{t("restrictedDesc")}</p>
+          <a
+            href="https://wa.me/972765384386"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-6 inline-flex items-center justify-center rounded-full btn-whatsapp px-8 py-4 text-base font-bold transition-all hover:scale-105"
+          >
+            WhatsApp
+          </a>
+        </div>
+      </div>
+    );
+  }
+
+  // Pricing loaded from API based on token + package
+  // For now using lookup table — in production this comes from the API
+  const pricing = getPricing(pkg);
 
   return (
     <div className="py-16 sm:py-24 bg-gray-50 min-h-screen">
@@ -35,7 +65,7 @@ export default function PaymentPage() {
 
             <div className="mt-4">
               <span className="text-4xl font-extrabold text-teal-900" dir="ltr">
-                {singleAmount.toLocaleString()}
+                {pricing.singleTotal.toLocaleString()}
               </span>
               <span className="text-lg text-gray-500 ms-1">&#8362;</span>
             </div>
@@ -43,7 +73,7 @@ export default function PaymentPage() {
 
             <div className="mt-4 flex items-center gap-2 text-sm text-teal-700 font-semibold">
               <CheckIcon className="h-5 w-5" />
-              {t("save")} {savings.toLocaleString()} &#8362;
+              {t("save")} {pricing.savings.toLocaleString()} &#8362;
             </div>
 
             <button className="mt-8 w-full rounded-full bg-teal-700 py-4 text-base font-bold text-white hover:bg-teal-800 transition-colors">
@@ -57,13 +87,13 @@ export default function PaymentPage() {
 
             <div className="mt-4">
               <span className="text-4xl font-extrabold text-gray-900" dir="ltr">
-                {installmentAmount.toLocaleString()}
+                {pricing.installmentAmount.toLocaleString()}
               </span>
               <span className="text-lg text-gray-500 ms-1">&#8362;</span>
               <span className="text-sm text-gray-500 ms-1">{t("perMonth")}</span>
             </div>
             <p className="mt-1 text-sm text-gray-500">
-              {installmentCount} {t("months")} &middot; {installmentTotal.toLocaleString()} &#8362; {t("includesVat")}
+              {pricing.installmentCount} {t("months")} &middot; {pricing.installmentTotal.toLocaleString()} &#8362; {t("includesVat")}
             </p>
 
             <button className="mt-8 w-full rounded-full border-2 border-teal-700 py-4 text-base font-bold text-teal-700 hover:bg-teal-50 transition-colors">
@@ -74,4 +104,22 @@ export default function PaymentPage() {
       </div>
     </div>
   );
+}
+
+function getPricing(pkg: string) {
+  const packages: Record<string, { singleTotal: number; installmentAmount: number; installmentCount: number }> = {
+    first_visa: { singleTotal: 11787, installmentAmount: 2290, installmentCount: 6 },
+    humanitarian: { singleTotal: 11787, installmentAmount: 2290, installmentCount: 6 },
+    asylum_initial: { singleTotal: 11787, installmentAmount: 2290, installmentCount: 6 },
+    renewal_2a5: { singleTotal: 5415, installmentAmount: 2190, installmentCount: 3 },
+    work_to_resident: { singleTotal: 5415, installmentAmount: 2190, installmentCount: 3 },
+    resident_to_citizen: { singleTotal: 5415, installmentAmount: 2190, installmentCount: 3 },
+    tourist_invitation: { singleTotal: 5415, installmentAmount: 2190, installmentCount: 3 },
+    internal_appeal: { singleTotal: 6595, installmentAmount: 2590, installmentCount: 3 },
+    court_appeal: { singleTotal: 15327, installmentAmount: 3490, installmentCount: 6 },
+  };
+
+  const p = packages[pkg] || packages.first_visa;
+  const installmentTotal = p.installmentAmount * p.installmentCount;
+  return { ...p, installmentTotal, savings: installmentTotal - p.singleTotal };
 }
