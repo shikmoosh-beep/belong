@@ -382,6 +382,436 @@ export const countries: Country[] = [
       },
     ],
   },
+  {
+    slug: "canada",
+    name: { he: "קנדה", en: "Canada" },
+    flag: "🇨🇦",
+    capital: "Ottawa",
+    language: "English / French",
+    currency: "CAD ($)",
+    immigrationAuthority: {
+      he: "IRCC — המחלקה להגירה, פליטים ואזרחות",
+      en: "IRCC — Immigration, Refugees and Citizenship Canada",
+    },
+    overview: {
+      he: "קנדה נחשבת לאחת המדינות הידידותיות ביותר למהגרים בעולם. מערכת ההגירה מבוססת על Express Entry — מערכת נקודות שמדרגת מועמדים לפי גיל, השכלה, ניסיון, ושפה.",
+      en: "Canada is considered one of the most immigrant-friendly countries in the world. The immigration system is based on Express Entry — a points system that ranks candidates by age, education, experience, and language.",
+    },
+    visaTypes: [
+      {
+        name: { he: "Express Entry (Federal Skilled Worker)", en: "Express Entry (Federal Skilled Worker)" },
+        description: {
+          he: "המסלול המהיר ביותר לתושבות קבע. מבוסס על ניקוד CRS — מי שמקבל מספיק נקודות מקבל הזמנה להגיש.",
+          en: "The fastest path to permanent residence. Based on CRS scoring — those with enough points receive an invitation to apply.",
+        },
+        duration: "Permanent Residence",
+        requirements: [
+          { he: "שנה+ ניסיון עבודה מקצועי", en: "1+ year of skilled work experience" },
+          { he: "רמת שפה CLB 7 (אנגלית/צרפתית)", en: "Language level CLB 7 (English/French)" },
+          { he: "השכלה תיכונית לפחות", en: "High school education minimum" },
+          { he: "הערכת תעודות (ECA)", en: "Educational Credential Assessment (ECA)" },
+        ],
+      },
+      {
+        name: { he: "Provincial Nominee Program (PNP)", en: "Provincial Nominee Program (PNP)" },
+        description: {
+          he: "כל מחוז בקנדה יכול לבחור מהגרים לפי הצרכים שלו. מוסיף 600 נקודות ב-Express Entry.",
+          en: "Each province can select immigrants based on its needs. Adds 600 points in Express Entry.",
+        },
+        duration: "Permanent Residence",
+        requirements: [
+          { he: "עמידה בדרישות המחוז הספציפי", en: "Meet specific provincial requirements" },
+          { he: "כוונה להתגורר במחוז", en: "Intent to reside in the province" },
+          { he: "ניסיון עבודה או הצעת עבודה (תלוי מחוז)", en: "Work experience or job offer (varies by province)" },
+        ],
+      },
+      {
+        name: { he: "Family Sponsorship", en: "Family Sponsorship" },
+        description: {
+          he: "אזרחים ותושבי קבע יכולים לחסות על בני זוג, ילדים, הורים וסבים.",
+          en: "Citizens and permanent residents can sponsor spouses, children, parents, and grandparents.",
+        },
+        duration: "Permanent Residence",
+        requirements: [
+          { he: "הספונסר אזרח או תושב קבע", en: "Sponsor is citizen or PR" },
+          { he: "הוכחת קשר אמיתי", en: "Proof of genuine relationship" },
+          { he: "התחייבות כלכלית", en: "Financial undertaking" },
+        ],
+      },
+      {
+        name: { he: "Study Permit", en: "Study Permit" },
+        description: {
+          he: "ללימודים במוסד מוכר. מאפשר עבודה 20 שעות בשבוע + אשרת עבודה לאחר סיום.",
+          en: "For study at a recognized institution. Allows 20hrs/week work + post-graduation work permit.",
+        },
+        duration: "Duration of studies",
+        requirements: [
+          { he: "אישור קבלה ממוסד מוכר (DLI)", en: "Acceptance from a DLI" },
+          { he: "הוכחת יכולת כלכלית", en: "Proof of financial support" },
+          { he: "ללא עבר פלילי", en: "No criminal record" },
+        ],
+      },
+      {
+        name: { he: "Asylum / Refugee", en: "Asylum / Refugee" },
+        description: {
+          he: "קנדה מקבלת פליטים דרך UNHCR, חסות פרטית, ובקשות מקלט פנימיות.",
+          en: "Canada accepts refugees through UNHCR, private sponsorship, and inland claims.",
+        },
+        duration: "Permanent Residence",
+        requirements: [
+          { he: "פחד מבוסס מרדיפה", en: "Well-founded fear of persecution" },
+          { he: "הגשה ב-IRCC או בגבול", en: "Claim at IRCC or at the border" },
+          { he: "שימוע בפני IRB", en: "Hearing before IRB" },
+        ],
+      },
+      {
+        name: { he: "Start-up Visa", en: "Start-up Visa" },
+        description: {
+          he: "ליזמים עם רעיון עסקי חדשני ותמיכה מארגון מוכר בקנדה.",
+          en: "For entrepreneurs with an innovative business idea and support from a designated organization.",
+        },
+        duration: "Permanent Residence",
+        requirements: [
+          { he: "מכתב תמיכה מארגון מוכר", en: "Letter of support from designated org" },
+          { he: "רמת שפה CLB 5", en: "Language level CLB 5" },
+          { he: "מספיק כסף להתיישבות", en: "Sufficient settlement funds" },
+        ],
+      },
+    ],
+    process: [
+      {
+        title: { he: "הערכת זכאות", en: "Eligibility Assessment" },
+        description: { he: "בדיקת ניקוד CRS וזיהוי המסלול המתאים.", en: "Check CRS score and identify the right pathway." },
+      },
+      {
+        title: { he: "יצירת פרופיל Express Entry", en: "Create Express Entry Profile" },
+        description: { he: "הזנת פרטים למאגר ה-Express Entry של קנדה.", en: "Enter details into Canada's Express Entry pool." },
+      },
+      {
+        title: { he: "קבלת הזמנה (ITA)", en: "Receive Invitation (ITA)" },
+        description: { he: "אם הניקוד מספיק גבוה — מתקבלת הזמנה להגיש בקשה.", en: "If score is high enough — receive an Invitation to Apply." },
+      },
+      {
+        title: { he: "הגשת בקשה מלאה", en: "Submit Full Application" },
+        description: { he: "60 יום להגיש מסמכים, בדיקות רפואיות, ואישור משטרה.", en: "60 days to submit documents, medical exams, and police clearance." },
+      },
+      {
+        title: { he: "קבלת תושבות קבע", en: "Receive PR" },
+        description: { he: "זמן טיפול ממוצע: 6–8 חודשים.", en: "Average processing: 6–8 months." },
+      },
+    ],
+  },
+  {
+    slug: "australia",
+    name: { he: "אוסטרליה", en: "Australia" },
+    flag: "🇦🇺",
+    capital: "Canberra",
+    language: "English",
+    currency: "AUD ($)",
+    immigrationAuthority: {
+      he: "Department of Home Affairs",
+      en: "Department of Home Affairs",
+    },
+    overview: {
+      he: "אוסטרליה מושכת מהגרים עם איכות חיים גבוהה, שכר טוב, ומערכת הגירה מבוססת נקודות. יש מסלולים לעובדים מיומנים, משפחות, סטודנטים ומשקיעים.",
+      en: "Australia attracts immigrants with high quality of life, good wages, and a points-based immigration system. Pathways exist for skilled workers, families, students, and investors.",
+    },
+    visaTypes: [
+      {
+        name: { he: "Skilled Independent (189)", en: "Skilled Independent Visa (189)" },
+        description: {
+          he: "תושבות קבע לבעלי מקצוע ברשימת המקצועות המבוקשים. מבוסס נקודות, ללא צורך בספונסר.",
+          en: "Permanent residence for workers in the Skilled Occupation List. Points-based, no sponsor needed.",
+        },
+        duration: "Permanent",
+        requirements: [
+          { he: "מקצוע ברשימת SOL", en: "Occupation on SOL" },
+          { he: "הערכת מקצוע (Skills Assessment)", en: "Skills Assessment" },
+          { he: "גיל מתחת ל-45", en: "Under 45 years old" },
+          { he: "אנגלית ברמה מספקת (IELTS 6+)", en: "Competent English (IELTS 6+)" },
+          { he: "65 נקודות מינימום", en: "Minimum 65 points" },
+        ],
+      },
+      {
+        name: { he: "Employer Sponsored (482/494)", en: "Employer Sponsored (482/494)" },
+        description: {
+          he: "אשרת עבודה זמנית או אזורית עם מעסיק אוסטרלי שמעוניין לחסות עליך.",
+          en: "Temporary or regional work visa with an Australian employer willing to sponsor you.",
+        },
+        duration: "2–4 years",
+        requirements: [
+          { he: "הצעת עבודה ממעסיק מורשה", en: "Job offer from approved employer" },
+          { he: "ניסיון של שנתיים בתחום", en: "2 years experience in the field" },
+          { he: "אנגלית ברמה מספקת", en: "Competent English" },
+        ],
+      },
+      {
+        name: { he: "Partner Visa (820/801)", en: "Partner Visa (820/801)" },
+        description: {
+          he: "לבני זוג של אזרחים או תושבי קבע אוסטרליים. תהליך דו-שלבי.",
+          en: "For partners of Australian citizens or permanent residents. Two-stage process.",
+        },
+        duration: "Temporary → Permanent",
+        requirements: [
+          { he: "קשר אמיתי ומתמשך", en: "Genuine and continuing relationship" },
+          { he: "הספונסר אזרח או PR", en: "Sponsor is citizen or PR" },
+          { he: "בדיקות רפואיות ופליליות", en: "Health and character checks" },
+        ],
+      },
+      {
+        name: { he: "Student Visa (500)", en: "Student Visa (500)" },
+        description: {
+          he: "ללימודים באוסטרליה. מאפשר עבודה חלקית ואפשרות לאשרת עבודה לאחר סיום.",
+          en: "For study in Australia. Allows part-time work and post-study work visa option.",
+        },
+        duration: "Duration of course",
+        requirements: [
+          { he: "אישור קבלה (CoE)", en: "Confirmation of Enrolment (CoE)" },
+          { he: "ביטוח בריאות (OSHC)", en: "Health insurance (OSHC)" },
+          { he: "יכולת כלכלית", en: "Financial capacity" },
+          { he: "אנגלית IELTS 5.5+", en: "English IELTS 5.5+" },
+        ],
+      },
+      {
+        name: { he: "Asylum / Protection (866)", en: "Protection Visa (866)" },
+        description: {
+          he: "הגנה למי שנמצא באוסטרליה ועומד בהגדרת פליט לפי אמנת ז'נבה.",
+          en: "Protection for those in Australia who meet the refugee definition under the Geneva Convention.",
+        },
+        duration: "Permanent",
+        requirements: [
+          { he: "נוכחות פיזית באוסטרליה", en: "Physical presence in Australia" },
+          { he: "עמידה בהגדרת פליט", en: "Meet refugee definition" },
+          { he: "הגשת בקשה ל-Home Affairs", en: "Apply to Home Affairs" },
+        ],
+      },
+    ],
+    process: [
+      {
+        title: { he: "בדיקת זכאות וניקוד", en: "Check Eligibility & Points" },
+        description: { he: "בדיקת מקצוע ברשימת SOL וחישוב נקודות.", en: "Check occupation on SOL and calculate points." },
+      },
+      {
+        title: { he: "הערכת מקצוע", en: "Skills Assessment" },
+        description: { he: "הגשת תעודות לגוף המקצועי המוסמך להערכה.", en: "Submit qualifications to the relevant assessing authority." },
+      },
+      {
+        title: { he: "הגשת EOI", en: "Submit EOI" },
+        description: { he: "הגשת Expression of Interest למאגר SkillSelect.", en: "Submit Expression of Interest to SkillSelect." },
+      },
+      {
+        title: { he: "קבלת הזמנה", en: "Receive Invitation" },
+        description: { he: "אם הניקוד מספיק — הזמנה להגיש בקשה.", en: "If points are sufficient — invitation to apply." },
+      },
+      {
+        title: { he: "הגשת בקשה והחלטה", en: "Apply & Decision" },
+        description: { he: "הגשת מסמכים + בדיקות. זמן טיפול: 6–12 חודשים.", en: "Submit documents + checks. Processing: 6–12 months." },
+      },
+    ],
+  },
+  {
+    slug: "spain",
+    name: { he: "ספרד", en: "Spain" },
+    flag: "🇪🇸",
+    capital: "Madrid",
+    language: "Spanish",
+    currency: "EUR (€)",
+    immigrationAuthority: {
+      he: "Oficina de Extranjería (משרד הזרים)",
+      en: "Oficina de Extranjería (Immigration Office)",
+    },
+    overview: {
+      he: "ספרד מציעה מסלולי הגירה מגוונים כולל אשרת Digital Nomad פופולרית, מסלול משפחתי, ואשרת Golden Visa למשקיעים. איכות חיים גבוהה ועלויות נמוכות יחסית למערב אירופה.",
+      en: "Spain offers diverse immigration pathways including a popular Digital Nomad visa, family route, and Golden Visa for investors. High quality of life with lower costs compared to Western Europe.",
+    },
+    visaTypes: [
+      {
+        name: { he: "Digital Nomad Visa", en: "Digital Nomad Visa" },
+        description: {
+          he: "אשרה חדשה לעובדים מרחוק ופרילנסרים שעובדים עם חברות מחוץ לספרד.",
+          en: "New visa for remote workers and freelancers working with companies outside Spain.",
+        },
+        duration: "1 year (renewable to 5)",
+        requirements: [
+          { he: "הכנסה של €2,520+/חודש", en: "Income of €2,520+/month" },
+          { he: "עבודה עם חברה מחוץ לספרד", en: "Work with a company outside Spain" },
+          { he: "ביטוח בריאות", en: "Health insurance" },
+          { he: "ללא עבר פלילי", en: "No criminal record" },
+        ],
+      },
+      {
+        name: { he: "Golden Visa (משקיעים)", en: "Golden Visa (Investor)" },
+        description: {
+          he: "תושבות למשקיעים בנדל\"ן (מ-€500,000) או בעסקים.",
+          en: "Residency for real estate investors (from €500,000) or business investors.",
+        },
+        duration: "2 years (renewable)",
+        requirements: [
+          { he: "השקעה בנדל\"ן €500,000+", en: "Real estate investment €500,000+" },
+          { he: "או השקעה בעסק/אג\"ח", en: "Or business/bond investment" },
+          { he: "ביטוח בריאות", en: "Health insurance" },
+        ],
+      },
+      {
+        name: { he: "Work Visa", en: "Work Visa" },
+        description: {
+          he: "אשרת עבודה עם מעסיק ספרדי. המעסיק צריך להוכיח שלא מצא עובד מקומי.",
+          en: "Work visa with a Spanish employer. Employer must prove no local worker was found.",
+        },
+        duration: "1 year (renewable)",
+        requirements: [
+          { he: "הצעת עבודה ממעסיק ספרדי", en: "Job offer from Spanish employer" },
+          { he: "בדיקת שוק עבודה (Situación Nacional)", en: "Labor market test" },
+          { he: "הכשרה מתאימה לתפקיד", en: "Qualifications matching the role" },
+        ],
+      },
+      {
+        name: { he: "Family Reunification", en: "Family Reunification" },
+        description: {
+          he: "לבני משפחה של תושבים חוקיים בספרד.",
+          en: "For family members of legal residents in Spain.",
+        },
+        duration: "1 year (renewable)",
+        requirements: [
+          { he: "הספונסר תושב חוקי שנה+", en: "Sponsor is legal resident for 1+ year" },
+          { he: "הכנסה מינימלית", en: "Minimum income" },
+          { he: "דיור הולם", en: "Adequate housing" },
+        ],
+      },
+      {
+        name: { he: "Non-Lucrative Visa", en: "Non-Lucrative Visa" },
+        description: {
+          he: "לחיים בספרד ללא עבודה — לגמלאים, אנשים עם הכנסה פסיבית.",
+          en: "For living in Spain without working — retirees, people with passive income.",
+        },
+        duration: "1 year (renewable)",
+        requirements: [
+          { he: "הכנסה פסיבית של €2,400+/חודש", en: "Passive income €2,400+/month" },
+          { he: "ביטוח בריאות מלא", en: "Full health insurance" },
+          { he: "ללא כוונה לעבוד בספרד", en: "No intention to work in Spain" },
+        ],
+      },
+    ],
+    process: [
+      {
+        title: { he: "בחירת מסלול", en: "Choose Pathway" },
+        description: { he: "זיהוי סוג האשרה המתאים — עבודה, משקיע, Digital Nomad, או משפחה.", en: "Identify the right visa — work, investor, Digital Nomad, or family." },
+      },
+      {
+        title: { he: "הגשה בקונסוליה", en: "Consulate Application" },
+        description: { he: "הגשת בקשה בקונסוליה הספרדית בארץ המוצא.", en: "Submit application at the Spanish consulate in your home country." },
+      },
+      {
+        title: { he: "קבלת ויזה", en: "Receive Visa" },
+        description: { he: "זמן טיפול: 1–3 חודשים.", en: "Processing time: 1–3 months." },
+      },
+      {
+        title: { he: "רישום בספרד", en: "Registration in Spain" },
+        description: { he: "תוך 30 יום מההגעה — רישום NIE וכרטיס תושב.", en: "Within 30 days of arrival — NIE registration and residence card." },
+      },
+    ],
+  },
+  {
+    slug: "france",
+    name: { he: "צרפת", en: "France" },
+    flag: "🇫🇷",
+    capital: "Paris",
+    language: "French",
+    currency: "EUR (€)",
+    immigrationAuthority: {
+      he: "Préfecture — לשכת המחוז",
+      en: "Préfecture — Prefecture Office",
+    },
+    overview: {
+      he: "צרפת מציעה מסלולי הגירה מגוונים עם דגש על מקצוענים, סטודנטים ומשפחות. כוללת את ה-Talent Passport ליזמים ואנשי מקצוע בעלי כישרון מיוחד.",
+      en: "France offers diverse immigration routes with emphasis on professionals, students, and families. Includes the Talent Passport for entrepreneurs and exceptional professionals.",
+    },
+    visaTypes: [
+      {
+        name: { he: "Talent Passport", en: "Talent Passport (Passeport Talent)" },
+        description: {
+          he: "אשרה מיוחדת לאנשי מקצוע בעלי כישרון — חוקרים, יזמים, אמנים, ובעלי תואר מאסטר.",
+          en: "Special visa for talented professionals — researchers, entrepreneurs, artists, and master's degree holders.",
+        },
+        duration: "4 years",
+        requirements: [
+          { he: "תואר מאסטר או שווה ערך", en: "Master's degree or equivalent" },
+          { he: "הצעת עבודה בשכר גבוה", en: "High-salary job offer" },
+          { he: "או פרויקט יזמי חדשני", en: "Or innovative entrepreneurial project" },
+        ],
+      },
+      {
+        name: { he: "Salaried Worker Visa", en: "Salaried Worker Visa" },
+        description: {
+          he: "אשרת עבודה סטנדרטית עם מעסיק צרפתי.",
+          en: "Standard work visa with a French employer.",
+        },
+        duration: "1 year (renewable)",
+        requirements: [
+          { he: "חוזה עבודה ממעסיק צרפתי", en: "Employment contract from French employer" },
+          { he: "אישור DIRECCTE", en: "DIRECCTE authorization" },
+          { he: "תעודות מקצועיות", en: "Professional qualifications" },
+        ],
+      },
+      {
+        name: { he: "Family Visa", en: "Family Visa" },
+        description: {
+          he: "לבני זוג וילדים של אזרחים או תושבים צרפתיים.",
+          en: "For spouses and children of French citizens or residents.",
+        },
+        duration: "1 year → 10 years",
+        requirements: [
+          { he: "נישואים או PACS עם אזרח צרפתי", en: "Marriage or PACS with French citizen" },
+          { he: "רמת צרפתית A1", en: "French level A1" },
+          { he: "הוכחת חיי זוגיות", en: "Proof of conjugal life" },
+        ],
+      },
+      {
+        name: { he: "Student Visa", en: "Student Visa" },
+        description: {
+          he: "ללימודים במוסד צרפתי. צרפת מציעה שכר לימוד נמוך מאוד גם לזרים.",
+          en: "For study at a French institution. France offers very low tuition even for foreigners.",
+        },
+        duration: "1 year (renewable)",
+        requirements: [
+          { he: "קבלה למוסד מוכר", en: "Acceptance from recognized institution" },
+          { he: "הרשמה דרך Campus France", en: "Registration through Campus France" },
+          { he: "הוכחת יכולת כלכלית (€615/חודש)", en: "Proof of funds (€615/month)" },
+        ],
+      },
+      {
+        name: { he: "Asylum", en: "Asylum" },
+        description: {
+          he: "צרפת מקבלת בקשות מקלט דרך OFPRA.",
+          en: "France processes asylum claims through OFPRA.",
+        },
+        duration: "10 years (refugee) / 4 years (subsidiary)",
+        requirements: [
+          { he: "נוכחות פיזית בצרפת", en: "Physical presence in France" },
+          { he: "הגשה ב-OFPRA", en: "Application at OFPRA" },
+          { he: "ראיון אישי", en: "Personal interview" },
+        ],
+      },
+    ],
+    process: [
+      {
+        title: { he: "בחירת מסלול", en: "Choose Pathway" },
+        description: { he: "זיהוי סוג האשרה — Talent Passport, עבודה, משפחה, או לימודים.", en: "Identify visa type — Talent Passport, work, family, or study." },
+      },
+      {
+        title: { he: "הגשה בקונסוליה", en: "Consulate Application" },
+        description: { he: "הגשת בקשת ויזה בקונסוליה הצרפתית.", en: "Submit visa application at the French consulate." },
+      },
+      {
+        title: { he: "קבלת ויזה D", en: "Receive Long-Stay Visa" },
+        description: { he: "ויזה ארוכת טווח (VLS-TS) המשמשת גם כאשרת שהייה.", en: "Long-stay visa (VLS-TS) that also serves as a residence permit." },
+      },
+      {
+        title: { he: "אימות באינטרנט", en: "Online Validation" },
+        description: { he: "תוך 3 חודשים — אימות הויזה באתר ANEF.", en: "Within 3 months — validate the visa on ANEF website." },
+      },
+    ],
+  },
 ];
 
 export function getCountryBySlug(slug: string): Country | undefined {
