@@ -947,6 +947,581 @@ export const countries: Country[] = [
       },
     ],
   },
+  {
+    slug: "portugal",
+    name: { he: "פורטוגל", en: "Portugal" },
+    flag: "🇵🇹",
+    capital: "Lisbon",
+    language: "Portuguese",
+    currency: "EUR (€)",
+    immigrationAuthority: {
+      he: "AIMA — הסוכנות לשילוב, הגירה ומקלט",
+      en: "AIMA — Agency for Integration, Migration and Asylum",
+    },
+    overview: {
+      he: "פורטוגל הפכה ליעד הגירה חם במיוחד — עם אקלים נוח, עלויות חיים סבירות, ומסלולי ויזה אטרקטיביים כולל Digital Nomad ו-D7 להכנסה פסיבית. תוכנית ה-NHR מציעה הטבות מס משמעותיות לתושבים חדשים.",
+      en: "Portugal has become an especially hot immigration destination — with pleasant climate, reasonable cost of living, and attractive visa routes including Digital Nomad and D7 for passive income. The NHR program offers significant tax benefits for new residents.",
+    },
+    visaTypes: [
+      {
+        name: { he: "Digital Nomad Visa (D8)", en: "Digital Nomad Visa (D8)" },
+        description: {
+          he: "לעובדים מרחוק ופרילנסרים עם הכנסה מחוץ לפורטוגל. אחת האשרות הפופולריות ביותר באירופה.",
+          en: "For remote workers and freelancers with income from outside Portugal. One of Europe's most popular visas.",
+        },
+        duration: "1 year → 2 years (renewable)",
+        requirements: [
+          { he: "הכנסה חודשית 4x שכר מינימום (כ-€3,500)", en: "Monthly income 4x minimum wage (~€3,500)" },
+          { he: "חוזה עבודה או הוכחת פרילנס", en: "Employment contract or freelance proof" },
+          { he: "ביטוח בריאות", en: "Health insurance" },
+          { he: "ללא עבר פלילי", en: "No criminal record" },
+        ],
+      },
+      {
+        name: { he: "D7 — הכנסה פסיבית", en: "D7 — Passive Income Visa" },
+        description: {
+          he: "לבעלי הכנסה פסיבית — פנסיה, השקעות, שכירות. מסלול פופולרי לגמלאים ובעלי הון.",
+          en: "For those with passive income — pensions, investments, rent. Popular route for retirees and investors.",
+        },
+        duration: "2 years (renewable → PR after 5)",
+        requirements: [
+          { he: "הכנסה פסיבית €760+/חודש", en: "Passive income €760+/month" },
+          { he: "דיור בפורטוגל", en: "Accommodation in Portugal" },
+          { he: "ביטוח בריאות", en: "Health insurance" },
+        ],
+      },
+      {
+        name: { he: "Tech Visa", en: "Tech Visa" },
+        description: {
+          he: "מסלול מהיר לעובדי טכנולוגיה בחברות סטארטאפ מוכרות בפורטוגל.",
+          en: "Fast track for tech workers in certified startup companies in Portugal.",
+        },
+        duration: "2 years (renewable)",
+        requirements: [
+          { he: "הצעת עבודה מחברה מוסמכת", en: "Job offer from a certified company" },
+          { he: "כישורים טכנולוגיים רלוונטיים", en: "Relevant tech skills" },
+          { he: "חוזה עבודה", en: "Employment contract" },
+        ],
+      },
+      {
+        name: { he: "Work Visa (D1)", en: "Work Visa (D1)" },
+        description: {
+          he: "אשרת עבודה סטנדרטית עם מעסיק פורטוגלי.",
+          en: "Standard work visa with a Portuguese employer.",
+        },
+        duration: "1 year (renewable)",
+        requirements: [
+          { he: "חוזה עבודה ממעסיק פורטוגלי", en: "Contract from Portuguese employer" },
+          { he: "אישור SEF/AIMA", en: "SEF/AIMA authorization" },
+          { he: "תעודות מקצועיות", en: "Professional qualifications" },
+        ],
+      },
+      {
+        name: { he: "Family Reunification", en: "Family Reunification" },
+        description: {
+          he: "לבני משפחה של תושבים חוקיים בפורטוגל.",
+          en: "For family members of legal residents in Portugal.",
+        },
+        duration: "2 years (renewable)",
+        requirements: [
+          { he: "הספונסר תושב חוקי", en: "Sponsor is legal resident" },
+          { he: "הוכחת קשר משפחתי", en: "Proof of family relationship" },
+          { he: "הכנסה והתחייבות כלכלית", en: "Income and financial commitment" },
+        ],
+      },
+      {
+        name: { he: "Student Visa (D4)", en: "Student Visa (D4)" },
+        description: {
+          he: "ללימודים במוסד מוכר בפורטוגל. שכר לימוד נמוך ביחס למערב אירופה.",
+          en: "For study at a recognized Portuguese institution. Low tuition compared to Western Europe.",
+        },
+        duration: "1 year (renewable)",
+        requirements: [
+          { he: "אישור קבלה ממוסד מוכר", en: "Acceptance from recognized institution" },
+          { he: "הוכחת יכולת כלכלית", en: "Proof of financial means" },
+          { he: "ביטוח בריאות", en: "Health insurance" },
+        ],
+      },
+    ],
+    process: [
+      {
+        title: { he: "בחירת מסלול", en: "Choose Pathway" },
+        description: { he: "D7, D8 (Digital Nomad), Tech Visa, או עבודה רגילה.", en: "D7, D8 (Digital Nomad), Tech Visa, or standard work." },
+      },
+      {
+        title: { he: "הכנת מסמכים", en: "Prepare Documents" },
+        description: { he: "NIF (מספר מס), חשבון בנק פורטוגלי, ביטוח, ואישורים.", en: "NIF (tax number), Portuguese bank account, insurance, and certificates." },
+      },
+      {
+        title: { he: "הגשה בקונסוליה", en: "Consulate Application" },
+        description: { he: "הגשת בקשת ויזה בקונסוליה הפורטוגלית.", en: "Submit visa application at the Portuguese consulate." },
+      },
+      {
+        title: { he: "הגעה + אשרת שהייה", en: "Arrival + Residence Permit" },
+        description: { he: "לאחר ההגעה — פגישה ב-AIMA לקבלת כרטיס תושב.", en: "After arrival — appointment at AIMA for residence card." },
+      },
+    ],
+  },
+  {
+    slug: "netherlands",
+    name: { he: "הולנד", en: "Netherlands" },
+    flag: "🇳🇱",
+    capital: "Amsterdam",
+    language: "Dutch / English",
+    currency: "EUR (€)",
+    immigrationAuthority: {
+      he: "IND — שירות ההגירה וההתאזרחות",
+      en: "IND — Immigration and Naturalisation Service",
+    },
+    overview: {
+      he: "הולנד מציעה סביבת עבודה בינלאומית עם שימוש נרחב באנגלית, הטבת מס 30% לעובדים זרים מיומנים, ומסלולי הגירה ידידותיים ליזמים ומקצוענים.",
+      en: "The Netherlands offers an international work environment with widespread English usage, 30% tax ruling for skilled foreign workers, and entrepreneur-friendly immigration pathways.",
+    },
+    visaTypes: [
+      {
+        name: { he: "Highly Skilled Migrant", en: "Highly Skilled Migrant (Kennismigrant)" },
+        description: {
+          he: "המסלול הפופולרי ביותר — לעובדים מיומנים עם שכר מעל הסף. כולל הטבת מס 30% (30% ruling).",
+          en: "The most popular route — for skilled workers earning above the threshold. Includes 30% tax ruling benefit.",
+        },
+        duration: "5 years max",
+        requirements: [
+          { he: "שכר שנתי מעל €46,107 (או €35,048 מתחת לגיל 30)", en: "Annual salary above €46,107 (or €35,048 if under 30)" },
+          { he: "מעסיק מוכר כספונסר IND", en: "Employer recognized as IND sponsor" },
+          { he: "תואר או ניסיון רלוונטי", en: "Degree or relevant experience" },
+        ],
+      },
+      {
+        name: { he: "DAFT — יזמים אמריקאים", en: "DAFT — US Entrepreneurs" },
+        description: {
+          he: "הסכם ייחודי בין הולנד לארה\"ב — מאפשר לאמריקאים לפתוח עסק בהולנד עם השקעה מינימלית.",
+          en: "Unique Dutch-American Friendship Treaty — allows Americans to start a business in NL with minimal investment.",
+        },
+        duration: "2 years (renewable)",
+        requirements: [
+          { he: "אזרחות אמריקאית", en: "US citizenship" },
+          { he: "השקעה מינימלית €4,500", en: "Minimum investment €4,500" },
+          { he: "תוכנית עסקית", en: "Business plan" },
+          { he: "רישום בלשכת המסחר (KVK)", en: "Registration at Chamber of Commerce (KVK)" },
+        ],
+      },
+      {
+        name: { he: "Startup Visa", en: "Startup Visa" },
+        description: {
+          he: "ליזמים עם רעיון חדשני. חייבים לעבוד עם facilitator מוכר בהולנד.",
+          en: "For entrepreneurs with an innovative idea. Must work with a recognized facilitator in NL.",
+        },
+        duration: "1 year → self-employment permit",
+        requirements: [
+          { he: "הסכם עם facilitator מוכר", en: "Agreement with recognized facilitator" },
+          { he: "רעיון עסקי חדשני", en: "Innovative business idea" },
+          { he: "מספיק כסף למחייה", en: "Sufficient funds for living" },
+          { he: "רישום בלשכת המסחר", en: "Chamber of Commerce registration" },
+        ],
+      },
+      {
+        name: { he: "Family Reunification", en: "Family Reunification" },
+        description: {
+          he: "לבני זוג וילדים של תושבי הולנד. כולל מבחן שילוב אזרחי בסיסי.",
+          en: "For spouses and children of Dutch residents. Includes basic civic integration exam.",
+        },
+        duration: "5 years",
+        requirements: [
+          { he: "הכנסה מינימלית של הספונסר", en: "Sponsor's minimum income" },
+          { he: "מבחן שילוב אזרחי (MVV)", en: "Civic integration exam (MVV)" },
+          { he: "הוכחת קשר אמיתי", en: "Proof of genuine relationship" },
+        ],
+      },
+      {
+        name: { he: "Student Visa", en: "Student Visa" },
+        description: {
+          he: "ללימודים באוניברסיטה הולנדית. תוכניות רבות באנגלית. אפשרות Orientation Year לאחר סיום.",
+          en: "For study at a Dutch university. Many English-taught programs. Orientation Year option after graduation.",
+        },
+        duration: "Duration of studies",
+        requirements: [
+          { he: "קבלה למוסד מוכר", en: "Acceptance from recognized institution" },
+          { he: "הוכחת כלכלית (€13,000/שנה)", en: "Financial proof (€13,000/year)" },
+          { he: "ביטוח בריאות", en: "Health insurance" },
+        ],
+      },
+      {
+        name: { he: "Orientation Year (Zoekjaar)", en: "Orientation Year (Zoekjaar)" },
+        description: {
+          he: "שנת חיפוש עבודה לבוגרי אוניברסיטאות מובילות בעולם — גם בלי ללמוד בהולנד.",
+          en: "Job-seeking year for graduates of top world universities — even without studying in NL.",
+        },
+        duration: "1 year",
+        requirements: [
+          { he: "תואר מאוניברסיטה בדירוג Top 200", en: "Degree from a Top 200 university" },
+          { he: "סיום ב-3 השנים האחרונות", en: "Graduated within the last 3 years" },
+          { he: "מספיק כסף למחייה", en: "Sufficient funds for living" },
+        ],
+      },
+    ],
+    process: [
+      {
+        title: { he: "בחירת מסלול", en: "Choose Pathway" },
+        description: { he: "Highly Skilled, DAFT, Startup, או לימודים.", en: "Highly Skilled, DAFT, Startup, or study." },
+      },
+      {
+        title: { he: "הגשת בקשת MVV", en: "Apply for MVV" },
+        description: { he: "בקשת ויזת כניסה (MVV) בשגרירות ההולנדית — או הגשה ע\"י הספונסר בהולנד.", en: "Apply for entry visa (MVV) at Dutch embassy — or sponsor applies in NL." },
+      },
+      {
+        title: { he: "הגעה ורישום", en: "Arrival & Registration" },
+        description: { he: "רישום בעירייה (gemeente) + קבלת BSN (מספר זהות).", en: "Register at municipality (gemeente) + receive BSN (citizen service number)." },
+      },
+      {
+        title: { he: "אשרת שהייה", en: "Residence Permit" },
+        description: { he: "קבלת כרטיס תושב מ-IND — בד\"כ תוך 2 שבועות.", en: "Receive residence card from IND — usually within 2 weeks." },
+      },
+    ],
+  },
+  {
+    slug: "italy",
+    name: { he: "איטליה", en: "Italy" },
+    flag: "🇮🇹",
+    capital: "Rome",
+    language: "Italian",
+    currency: "EUR (€)",
+    immigrationAuthority: {
+      he: "Questura — משטרת המחוז + Sportello Unico",
+      en: "Questura — Provincial Police + Sportello Unico",
+    },
+    overview: {
+      he: "איטליה מציעה איכות חיים יוצאת דופן, תרבות עשירה, ומסלולי הגירה כולל Digital Nomad Visa חדשה, Elective Residence לבעלי הכנסה פסיבית, ותוכנית מס שטוחה של 7% לגמלאים שעוברים לדרום.",
+      en: "Italy offers exceptional quality of life, rich culture, and immigration routes including a new Digital Nomad Visa, Elective Residence for passive income holders, and a flat 7% tax program for retirees relocating to the south.",
+    },
+    visaTypes: [
+      {
+        name: { he: "Digital Nomad Visa", en: "Digital Nomad Visa" },
+        description: {
+          he: "אשרה חדשה (2024) לעובדים מרחוק עם חברות מחוץ לאיטליה. כולל הטבות מס אפשריות.",
+          en: "New visa (2024) for remote workers with companies outside Italy. Includes possible tax benefits.",
+        },
+        duration: "1 year (renewable)",
+        requirements: [
+          { he: "הכנסה שנתית מינימלית (~€28,000)", en: "Minimum annual income (~€28,000)" },
+          { he: "עבודה עם חברה מחוץ לאיטליה", en: "Work with company outside Italy" },
+          { he: "ביטוח בריאות", en: "Health insurance" },
+          { he: "דיור באיטליה", en: "Accommodation in Italy" },
+        ],
+      },
+      {
+        name: { he: "Elective Residence", en: "Elective Residence (Residenza Elettiva)" },
+        description: {
+          he: "לחיים באיטליה ללא עבודה — לגמלאים, בעלי הכנסה פסיבית, אנשי הון. כולל תוכנית מס 7% בדרום.",
+          en: "For living in Italy without working — retirees, passive income holders. Includes 7% flat tax in southern regions.",
+        },
+        duration: "1 year (renewable → PR after 5)",
+        requirements: [
+          { he: "הכנסה פסיבית מספקת (אין סף רשמי, בפועל €31,000+)", en: "Sufficient passive income (no official threshold, ~€31,000+ in practice)" },
+          { he: "דיור באיטליה", en: "Accommodation in Italy" },
+          { he: "ביטוח בריאות מלא", en: "Full health insurance" },
+        ],
+      },
+      {
+        name: { he: "Work Visa (Nulla Osta)", en: "Work Visa (Nulla Osta)" },
+        description: {
+          he: "אשרת עבודה עם מעסיק איטלקי. כפופה למכסה שנתית (Decreto Flussi).",
+          en: "Work visa with Italian employer. Subject to annual quota (Decreto Flussi).",
+        },
+        duration: "2 years",
+        requirements: [
+          { he: "הצעת עבודה ממעסיק איטלקי", en: "Job offer from Italian employer" },
+          { he: "Nulla Osta (אישור מקדים)", en: "Nulla Osta (preliminary authorization)" },
+          { he: "מקום במכסה השנתית", en: "Available quota slot" },
+        ],
+      },
+      {
+        name: { he: "EU Blue Card", en: "EU Blue Card" },
+        description: {
+          he: "לבעלי תואר אקדמי עם הצעת עבודה בשכר גבוה. לא כפוף למכסה.",
+          en: "For degree holders with a high-salary job offer. Not subject to quota.",
+        },
+        duration: "2 years (renewable)",
+        requirements: [
+          { he: "תואר אקדמי מוכר", en: "Recognized academic degree" },
+          { he: "שכר שנתי מינימלי (כ-€27,000)", en: "Minimum annual salary (~€27,000)" },
+          { he: "חוזה עבודה שנה+", en: "Employment contract 1+ year" },
+        ],
+      },
+      {
+        name: { he: "Startup Visa", en: "Startup Visa (Italia Startup)" },
+        description: {
+          he: "ליזמים שרוצים להקים סטארטאפ חדשני באיטליה.",
+          en: "For entrepreneurs wanting to establish an innovative startup in Italy.",
+        },
+        duration: "1 year (renewable to 2)",
+        requirements: [
+          { he: "תוכנית עסקית חדשנית", en: "Innovative business plan" },
+          { he: "הון עצמי €50,000+", en: "Own capital €50,000+" },
+          { he: "אישור מוועדת Italia Startup", en: "Approval from Italia Startup committee" },
+        ],
+      },
+      {
+        name: { he: "Family Visa", en: "Family Visa" },
+        description: {
+          he: "לבני משפחה של תושבים חוקיים באיטליה.",
+          en: "For family members of legal residents in Italy.",
+        },
+        duration: "2 years (renewable)",
+        requirements: [
+          { he: "הספונסר תושב חוקי", en: "Sponsor is legal resident" },
+          { he: "הכנסה שנתית מינימלית", en: "Minimum annual income" },
+          { he: "דיור הולם", en: "Adequate housing" },
+        ],
+      },
+    ],
+    process: [
+      {
+        title: { he: "בחירת מסלול", en: "Choose Pathway" },
+        description: { he: "Digital Nomad, Elective Residence, עבודה, Blue Card, או Startup.", en: "Digital Nomad, Elective Residence, work, Blue Card, or Startup." },
+      },
+      {
+        title: { he: "הגשה בקונסוליה", en: "Consulate Application" },
+        description: { he: "הגשת בקשת ויזה D בקונסוליה האיטלקית.", en: "Submit D visa application at the Italian consulate." },
+      },
+      {
+        title: { he: "הגעה ורישום", en: "Arrival & Registration" },
+        description: { he: "תוך 8 ימים — הגשת בקשה ל-Permesso di Soggiorno בדואר.", en: "Within 8 days — submit Permesso di Soggiorno application by post." },
+      },
+      {
+        title: { he: "אשרת שהייה", en: "Residence Permit" },
+        description: { he: "פגישה ב-Questura + טביעות אצבע. קבלת כרטיס תוך 1–3 חודשים.", en: "Appointment at Questura + fingerprints. Card received within 1–3 months." },
+      },
+    ],
+  },
+  {
+    slug: "sweden",
+    name: { he: "שוודיה", en: "Sweden" },
+    flag: "🇸🇪",
+    capital: "Stockholm",
+    language: "Swedish / English",
+    currency: "SEK (kr)",
+    immigrationAuthority: {
+      he: "Migrationsverket — רשות ההגירה",
+      en: "Migrationsverket — Swedish Migration Agency",
+    },
+    overview: {
+      he: "שוודיה מציעה רמת חיים גבוהה מאוד, מערכת רווחה מתקדמת, וסביבה בינלאומית במיוחד בתחום הטכנולוגיה. לימודי תואר שני חינמיים לאזרחי EU, ושכר לימוד סביר לאחרים.",
+      en: "Sweden offers very high living standards, an advanced welfare system, and an international environment especially in tech. Free master's degrees for EU citizens, and reasonable tuition for others.",
+    },
+    visaTypes: [
+      {
+        name: { he: "Work Permit", en: "Work Permit" },
+        description: {
+          he: "אשרת עבודה עם מעסיק שוודי. ללא מכסה — כל מי שמקבל הצעת עבודה יכול להגיש.",
+          en: "Work permit with a Swedish employer. No quota — anyone with a job offer can apply.",
+        },
+        duration: "2 years (renewable to 4 → PR)",
+        requirements: [
+          { he: "הצעת עבודה ממעסיק שוודי", en: "Job offer from Swedish employer" },
+          { he: "שכר מינימלי SEK 28,480/חודש", en: "Minimum salary SEK 28,480/month" },
+          { he: "ביטוח בריאות ופנסיה", en: "Health and pension insurance" },
+          { he: "תנאי עבודה לפי הסכם קיבוצי", en: "Working conditions per collective agreement" },
+        ],
+      },
+      {
+        name: { he: "EU Blue Card", en: "EU Blue Card" },
+        description: {
+          he: "לבעלי תואר אקדמי עם הצעת עבודה בשכר גבוה בשוודיה.",
+          en: "For degree holders with a high-salary job offer in Sweden.",
+        },
+        duration: "2 years (renewable)",
+        requirements: [
+          { he: "תואר אקדמי מוכר", en: "Recognized academic degree" },
+          { he: "שכר שנתי 1.5x ממוצע שוודי", en: "Annual salary 1.5x Swedish average" },
+          { he: "חוזה עבודה שנה+", en: "Employment contract 1+ year" },
+        ],
+      },
+      {
+        name: { he: "Self-Employment Visa", en: "Self-Employment Visa" },
+        description: {
+          he: "ליזמים ועצמאיים שרוצים להפעיל עסק בשוודיה. דורש ניסיון וכסף להתחלה.",
+          en: "For entrepreneurs wanting to run a business in Sweden. Requires experience and startup capital.",
+        },
+        duration: "2 years (renewable)",
+        requirements: [
+          { he: "ניסיון בניהול עסק", en: "Business management experience" },
+          { he: "הון מספיק לפרנסה (2 שנים)", en: "Sufficient capital (2 years living)" },
+          { he: "תוכנית עסקית מפורטת", en: "Detailed business plan" },
+        ],
+      },
+      {
+        name: { he: "Family Reunification", en: "Family Reunification" },
+        description: {
+          he: "לבני זוג וילדים של תושבי שוודיה. תהליך ארוך אך יציב.",
+          en: "For spouses and children of Swedish residents. Long but stable process.",
+        },
+        duration: "2 years → PR",
+        requirements: [
+          { he: "קשר אמיתי ומתמשך", en: "Genuine and lasting relationship" },
+          { he: "הספונסר מתקיים כלכלית", en: "Sponsor is self-sufficient" },
+          { he: "דיור הולם", en: "Adequate housing" },
+        ],
+      },
+      {
+        name: { he: "Student Residence Permit", en: "Student Residence Permit" },
+        description: {
+          he: "ללימודים באוניברסיטה שוודית. תוכניות מאסטר רבות באנגלית. אפשרות Job Seeker Visa לאחר סיום.",
+          en: "For study at a Swedish university. Many master's programs in English. Job Seeker Visa option after graduation.",
+        },
+        duration: "Duration of studies",
+        requirements: [
+          { he: "קבלה למוסד מוכר", en: "Acceptance from recognized institution" },
+          { he: "הוכחת כלכלית (SEK 9,450/חודש)", en: "Financial proof (SEK 9,450/month)" },
+          { he: "ביטוח בריאות מקיף", en: "Comprehensive health insurance" },
+        ],
+      },
+      {
+        name: { he: "Asylum", en: "Asylum" },
+        description: {
+          he: "שוודיה מקבלת מבקשי מקלט לפי אמנת ז'נבה. הבקשה מוגשת ב-Migrationsverket.",
+          en: "Sweden accepts asylum seekers under the Geneva Convention. Applications filed at Migrationsverket.",
+        },
+        duration: "3 years (refugee) / 13 months (subsidiary)",
+        requirements: [
+          { he: "נוכחות פיזית בשוודיה", en: "Physical presence in Sweden" },
+          { he: "הגשה ב-Migrationsverket", en: "Application at Migrationsverket" },
+          { he: "ראיון אישי", en: "Personal interview" },
+        ],
+      },
+    ],
+    process: [
+      {
+        title: { he: "בחירת מסלול", en: "Choose Pathway" },
+        description: { he: "עבודה, Blue Card, יזמות, לימודים, או משפחה.", en: "Work, Blue Card, self-employment, study, or family." },
+      },
+      {
+        title: { he: "הגשה מקוונת", en: "Online Application" },
+        description: { he: "הגשה באתר Migrationsverket + תשלום אגרה.", en: "Apply on Migrationsverket website + pay fee." },
+      },
+      {
+        title: { he: "ביומטריה בשגרירות", en: "Biometrics at Embassy" },
+        description: { he: "ביקור בשגרירות השוודית לצילום טביעות אצבע.", en: "Visit Swedish embassy for fingerprints." },
+      },
+      {
+        title: { he: "החלטה + הגעה", en: "Decision + Arrival" },
+        description: { he: "זמן טיפול: 1–9 חודשים (תלוי בסוג). רישום ב-Skatteverket לאחר הגעה.", en: "Processing: 1–9 months (varies). Register at Skatteverket after arrival." },
+      },
+    ],
+  },
+  {
+    slug: "japan",
+    name: { he: "יפן", en: "Japan" },
+    flag: "🇯🇵",
+    capital: "Tokyo",
+    language: "Japanese",
+    currency: "JPY (¥)",
+    immigrationAuthority: {
+      he: "ISA — סוכנות שירותי ההגירה",
+      en: "ISA — Immigration Services Agency of Japan",
+    },
+    overview: {
+      he: "יפן פתחה את שעריה להגירה בשנים האחרונות עם Digital Nomad Visa חדשה, Highly Skilled Professional עם מסלול מהיר לתושבות קבע (שנה בלבד!), ותוכניות לסטודנטים. הכלכלה השלישית בגודלה בעולם עם תרבות ייחודית.",
+      en: "Japan has opened its doors to immigration in recent years with a new Digital Nomad Visa, Highly Skilled Professional with fast PR track (just 1 year!), and student programs. The world's third-largest economy with a unique culture.",
+    },
+    visaTypes: [
+      {
+        name: { he: "Highly Skilled Professional (HSP)", en: "Highly Skilled Professional (HSP)" },
+        description: {
+          he: "מסלול מבוסס נקודות למקצוענים ברמה גבוהה. 70 נקודות = תושבות קבע תוך 3 שנים, 80 נקודות = תוך שנה אחת בלבד!",
+          en: "Points-based route for high-level professionals. 70 points = PR in 3 years, 80 points = PR in just 1 year!",
+        },
+        duration: "5 years (→ PR in 1–3 years)",
+        requirements: [
+          { he: "70 נקודות מינימום (גיל, השכלה, שכר, ניסיון)", en: "Minimum 70 points (age, education, salary, experience)" },
+          { he: "הצעת עבודה ביפן", en: "Job offer in Japan" },
+          { he: "תואר אקדמי או 10 שנות ניסיון", en: "Academic degree or 10 years experience" },
+        ],
+      },
+      {
+        name: { he: "Engineer / Specialist in Humanities", en: "Engineer / Specialist in Humanities" },
+        description: {
+          he: "אשרת העבודה הנפוצה ביותר — למהנדסים, מתכנתים, מעצבים, משווקים, ומורים.",
+          en: "The most common work visa — for engineers, programmers, designers, marketers, and teachers.",
+        },
+        duration: "1–5 years (renewable)",
+        requirements: [
+          { he: "תואר אקדמי או 10 שנות ניסיון", en: "University degree or 10 years experience" },
+          { he: "הצעת עבודה ממעסיק יפני", en: "Job offer from Japanese employer" },
+          { he: "התאמה בין התואר לתפקיד", en: "Match between degree and position" },
+        ],
+      },
+      {
+        name: { he: "Digital Nomad Visa", en: "Digital Nomad Visa" },
+        description: {
+          he: "אשרה חדשה (2024) לעובדים מרחוק. מאפשרת שהייה ביפן עד 6 חודשים.",
+          en: "New visa (2024) for remote workers. Allows stay in Japan for up to 6 months.",
+        },
+        duration: "6 months (non-renewable)",
+        requirements: [
+          { he: "הכנסה שנתית ¥10M+ (כ-$68,000)", en: "Annual income ¥10M+ (~$68,000)" },
+          { he: "ביטוח בריאות פרטי", en: "Private health insurance" },
+          { he: "אזרחות מדינה עם הסכם מס עם יפן", en: "Citizenship of a country with tax treaty with Japan" },
+        ],
+      },
+      {
+        name: { he: "Spouse / Family Visa", en: "Spouse / Family Visa" },
+        description: {
+          he: "לבני זוג וילדים של אזרחים יפניים או תושבי קבע.",
+          en: "For spouses and children of Japanese nationals or permanent residents.",
+        },
+        duration: "1–3 years (renewable → PR)",
+        requirements: [
+          { he: "נישואים חוקיים לאזרח/ית יפני/ת", en: "Legal marriage to Japanese national" },
+          { he: "הוכחת קשר אמיתי", en: "Proof of genuine relationship" },
+          { he: "יכולת כלכלית", en: "Financial ability" },
+        ],
+      },
+      {
+        name: { he: "Student Visa", en: "Student Visa" },
+        description: {
+          he: "ללימודים במוסד יפני — אוניברסיטה, בית ספר לשפה יפנית, או מכללה מקצועית.",
+          en: "For study at a Japanese institution — university, Japanese language school, or vocational college.",
+        },
+        duration: "1–2 years (renewable)",
+        requirements: [
+          { he: "אישור קבלה ממוסד מוכר", en: "Acceptance from recognized institution" },
+          { he: "Certificate of Eligibility (CoE)", en: "Certificate of Eligibility (CoE)" },
+          { he: "הוכחת יכולת כלכלית", en: "Proof of financial ability" },
+        ],
+      },
+      {
+        name: { he: "Business Manager Visa", en: "Business Manager Visa" },
+        description: {
+          he: "לפתיחת או ניהול עסק ביפן. דורש משרד פיזי והשקעה ראשונית.",
+          en: "For starting or managing a business in Japan. Requires physical office and initial investment.",
+        },
+        duration: "1 year (renewable)",
+        requirements: [
+          { he: "משרד פיזי ביפן", en: "Physical office in Japan" },
+          { he: "השקעה ¥5M+ (כ-$34,000) או 2 עובדים", en: "Investment ¥5M+ (~$34,000) or 2 employees" },
+          { he: "תוכנית עסקית", en: "Business plan" },
+        ],
+      },
+    ],
+    process: [
+      {
+        title: { he: "בחירת מסלול", en: "Choose Pathway" },
+        description: { he: "HSP, Engineer, Digital Nomad, Student, או Business Manager.", en: "HSP, Engineer, Digital Nomad, Student, or Business Manager." },
+      },
+      {
+        title: { he: "Certificate of Eligibility (CoE)", en: "Certificate of Eligibility (CoE)" },
+        description: { he: "המעסיק או בית הספר מגיש בקשת CoE ב-ISA ביפן.", en: "Employer or school submits CoE application at ISA in Japan." },
+      },
+      {
+        title: { he: "ויזה בשגרירות", en: "Visa at Embassy" },
+        description: { he: "עם ה-CoE — הגשת בקשת ויזה בשגרירות היפנית. 5–10 ימי עבודה.", en: "With CoE — apply for visa at Japanese embassy. 5–10 business days." },
+      },
+      {
+        title: { he: "הגעה ורישום", en: "Arrival & Registration" },
+        description: { he: "רישום בעירייה, קבלת Residence Card, ופתיחת חשבון בנק.", en: "Register at city hall, receive Residence Card, and open bank account." },
+      },
+    ],
+  },
 ];
 
 export function getCountryBySlug(slug: string): Country | undefined {
