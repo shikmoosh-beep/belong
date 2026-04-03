@@ -27,6 +27,9 @@ export default function Header() {
             <Link href="/#faq" className="text-sm text-gray-600 hover:text-teal-700 transition-colors">
               {t("faq")}
             </Link>
+            <Link href="/countries" className="text-sm text-gray-600 hover:text-teal-700 transition-colors">
+              {t("countries")}
+            </Link>
             <LocaleSwitcher />
             <Link
               href="/book"
@@ -61,6 +64,13 @@ export default function Header() {
               onClick={() => setMobileOpen(false)}
             >
               {t("faq")}
+            </Link>
+            <Link
+              href="/countries"
+              className="block text-sm text-gray-600 hover:text-teal-700"
+              onClick={() => setMobileOpen(false)}
+            >
+              {t("countries")}
             </Link>
             <LocaleSwitcher />
             <Link
