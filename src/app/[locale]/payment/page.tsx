@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { setRequestLocale } from "next-intl/server";
 import PaymentPage from "@/components/payment/PaymentPage";
 
@@ -9,5 +10,9 @@ export default async function Payment({
   const { locale } = await params;
   setRequestLocale(locale);
 
-  return <PaymentPage />;
+  return (
+    <Suspense fallback={<div className="min-h-screen flex items-center justify-center">...</div>}>
+      <PaymentPage />
+    </Suspense>
+  );
 }
