@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "title": "Belong — Immigration Status in Israel",
+    "description": "A digital platform to help regularize your status in Israel. Personal, professional, and discreet guidance."
+  },
+  "nav": {
+    "home": "Home",
+    "howItWorks": "How It Works",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "bookCall": "Book a Call"
+  },
+  "hero": {
+    "headline": "You deserve to feel at home.",
+    "subheadline": "Professional and discreet guidance for regularizing your status in Israel. We're here for you.",
+    "cta1": "Check Eligibility — Free Call",
+    "cta2": "Message Us on WhatsApp",
+    "cta3": "Fill a Short Questionnaire"
+  },
+  "process": {
+    "title": "How It Works",
+    "step1Title": "Eligibility Check",
+    "step1Desc": "Fill a short questionnaire or talk to us — we'll understand your situation and check if we can help.",
+    "step2Title": "Consultation Call",
+    "step2Desc": "A personal 20-minute call. We'll show you your path and answer all your questions.",
+    "step3Title": "We Get to Work",
+    "step3Desc": "We handle all the bureaucracy. You get updates at every step."
+  },
+  "whyBelong": {
+    "title": "Why Belong?",
+    "reason1Title": "Not a Law Firm",
+    "reason1Desc": "We're a guidance service, not a cold, intimidating office. We talk to you at eye level.",
+    "reason2Title": "Legally Backed",
+    "reason2Desc": "Licensed attorneys oversee every case behind the scenes. You're in good hands.",
+    "reason3Title": "With You Every Step",
+    "reason3Desc": "Direct WhatsApp updates, a transparent timeline — you always know your status."
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "q1": "Is Belong a law firm?",
+    "a1": "No. Belong is a guidance service for status regularization, backed by licensed attorneys in Israel.",
+    "q2": "How long does the process take?",
+    "a2": "It depends on the type of application. During your consultation, we'll present an expected timeline for your case.",
+    "q3": "What happens if my application is rejected?",
+    "a3": "We also handle appeals. We don't leave you in the middle.",
+    "q4": "What languages do you work in?",
+    "a4": "Hebrew and English. Russian, Amharic, and Filipino coming soon.",
+    "q5": "How much does the service cost?",
+    "a5": "Pricing depends on the type of application. During your consultation, we'll present the exact price and payment options."
+  },
+  "cta": {
+    "title": "Ready to Start?",
+    "subtitle": "Check your eligibility — a free 20-minute call, no commitment.",
+    "button": "Book a Consultation"
+  },
+  "footer": {
+    "tagline": "You belong here.",
+    "rights": "All rights reserved",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "eligibility": {
+    "title": "Eligibility Check",
+    "subtitle": "Fill in your details and we'll check how we can help you.",
+    "name": "Full Name",
+    "phone": "Phone",
+    "email": "Email (optional)",
+    "country": "Country of Origin",
+    "yearsInIsrael": "How many years have you been in Israel?",
+    "currentStatus": "What is your current status?",
+    "statusOptions": {
+      "tourist": "Tourist",
+      "overstay": "Expired Visa",
+      "asylum": "Asylum Seeker",
+      "workVisa": "Work Visa",
+      "spouseVisa": "Spouse of Israeli Citizen",
+      "noVisa": "No Visa",
+      "other": "Other"
+    },
+    "hasChildren": "Do you have children born in Israel?",
+    "hasSpouse": "Do you have an Israeli spouse?",
+    "hasWork": "Do you have steady employment in Israel?",
+    "additionalInfo": "Anything else important for us to know?",
+    "submit": "Submit for Review",
+    "yes": "Yes",
+    "no": "No"
+  }
+}
