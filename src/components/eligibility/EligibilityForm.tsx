@@ -42,8 +42,20 @@ export default function EligibilityForm() {
   });
 
   const onSubmit = async (data: Record<string, unknown>) => {
+    // Evaluate locally for instant feedback
     const eligibilityResult = evaluateEligibility(data as unknown as FormData);
     setResult(eligibilityResult);
+
+    // Also save to API/DB in background
+    try {
+      await fetch("/api/eligibility", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+    } catch {
+      // Don't block UX if API fails
+    }
   };
 
   if (result) {
