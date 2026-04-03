@@ -812,6 +812,141 @@ export const countries: Country[] = [
       },
     ],
   },
+  {
+    slug: "uae",
+    name: { he: "איחוד האמירויות (דובאי)", en: "UAE (Dubai)" },
+    flag: "🇦🇪",
+    capital: "Abu Dhabi",
+    language: "Arabic / English",
+    currency: "AED (د.إ)",
+    immigrationAuthority: {
+      he: "ICP — המועצה הפדרלית לזהות, אזרחות, מכס וביטחון נמלים",
+      en: "ICP — Federal Authority for Identity, Citizenship, Customs & Port Security",
+    },
+    overview: {
+      he: "איחוד האמירויות, ובפרט דובאי, הפכו ליעד הגירה מוביל עם 0% מס הכנסה, תשתיות עולמיות, ומסלולי ויזה גמישים. Golden Visa ל-10 שנים, ויזת פרילנסר, ומסלולי עבודה מהירים מושכים מקצוענים מכל העולם.",
+      en: "The UAE, particularly Dubai, has become a leading immigration destination with 0% income tax, world-class infrastructure, and flexible visa pathways. A 10-year Golden Visa, freelancer visa, and fast work routes attract professionals from around the world.",
+    },
+    visaTypes: [
+      {
+        name: { he: "Golden Visa (10 שנים)", en: "Golden Visa (10 Years)" },
+        description: {
+          he: "תושבות ארוכת טווח למשקיעים, יזמים, מדענים, אמנים מצטיינים, ובעלי כישרון מיוחד. ללא צורך בספונסר.",
+          en: "Long-term residency for investors, entrepreneurs, scientists, outstanding artists, and exceptional talent. No sponsor needed.",
+        },
+        duration: "10 years (renewable)",
+        requirements: [
+          { he: "השקעה בנדל\"ן AED 2M+ (כ-$545,000)", en: "Real estate investment AED 2M+ (~$545,000)" },
+          { he: "או: יזם עם פרויקט מאושר", en: "Or: entrepreneur with approved project" },
+          { he: "או: מקצוען עם שכר AED 30,000+/חודש", en: "Or: professional earning AED 30,000+/month" },
+          { he: "או: מדען/חוקר/אמן מצטיין", en: "Or: outstanding scientist/researcher/artist" },
+        ],
+      },
+      {
+        name: { he: "Green Visa (5 שנים)", en: "Green Visa (5 Years)" },
+        description: {
+          he: "תושבות עצמאית ללא ספונסר — לעובדים מיומנים, פרילנסרים ומשקיעים.",
+          en: "Self-sponsored residency — for skilled workers, freelancers, and investors.",
+        },
+        duration: "5 years",
+        requirements: [
+          { he: "שכר חודשי AED 15,000+ (עובדים)", en: "Monthly salary AED 15,000+ (employees)" },
+          { he: "או: רישיון פרילנסר + הכנסה מוכחת", en: "Or: freelancer permit + proven income" },
+          { he: "תואר אקדמי או רישיון מקצועי", en: "Academic degree or professional license" },
+        ],
+      },
+      {
+        name: { he: "Employment Visa", en: "Employment Visa" },
+        description: {
+          he: "אשרת עבודה סטנדרטית — המעסיק מגיש בקשה ומשמש כספונסר.",
+          en: "Standard work visa — employer applies and serves as sponsor.",
+        },
+        duration: "2–3 years",
+        requirements: [
+          { he: "הצעת עבודה ממעסיק באמירויות", en: "Job offer from UAE employer" },
+          { he: "בדיקה רפואית", en: "Medical examination" },
+          { he: "תעודות מוכרות ומאושרות", en: "Attested qualifications" },
+          { he: "Emirates ID", en: "Emirates ID registration" },
+        ],
+      },
+      {
+        name: { he: "Freelancer Visa", en: "Freelancer Visa" },
+        description: {
+          he: "לעצמאיים ופרילנסרים — אפשר לפתוח רישיון ב-Free Zone ולעבוד עצמאית.",
+          en: "For self-employed and freelancers — open a license in a Free Zone and work independently.",
+        },
+        duration: "1–3 years",
+        requirements: [
+          { he: "רישיון Free Zone (מ-AED 7,500/שנה)", en: "Free Zone license (from AED 7,500/year)" },
+          { he: "פורטפוליו או הוכחת ניסיון", en: "Portfolio or proof of experience" },
+          { he: "ביטוח בריאות", en: "Health insurance" },
+        ],
+      },
+      {
+        name: { he: "Digital Nomad Visa", en: "Remote Work Visa" },
+        description: {
+          he: "אשרה לעובדים מרחוק שרוצים לגור בדובאי ולעבוד עם חברות מחוץ לאמירויות.",
+          en: "Visa for remote workers who want to live in Dubai while working for companies outside the UAE.",
+        },
+        duration: "1 year (renewable)",
+        requirements: [
+          { he: "הכנסה חודשית $3,500+ (או חיסכון שווה ערך)", en: "Monthly income $3,500+ (or equivalent savings)" },
+          { he: "חוזה עבודה עם חברה מחוץ לאמירויות", en: "Employment contract with company outside UAE" },
+          { he: "ביטוח בריאות בתוקף", en: "Valid health insurance" },
+          { he: "דרכון בתוקף 6 חודשים+", en: "Passport valid 6+ months" },
+        ],
+      },
+      {
+        name: { he: "Investor / Business Visa", en: "Investor / Business Visa" },
+        description: {
+          he: "לפתיחת עסק באמירויות — ב-Free Zone או ב-Mainland. כולל רישיון עסקי וויזת תושב.",
+          en: "For starting a business in the UAE — in a Free Zone or Mainland. Includes trade license and resident visa.",
+        },
+        duration: "2–10 years",
+        requirements: [
+          { he: "תוכנית עסקית", en: "Business plan" },
+          { he: "הון ראשוני (תלוי בסוג הרישיון)", en: "Initial capital (depends on license type)" },
+          { he: "בחירת Free Zone או Mainland", en: "Choose Free Zone or Mainland" },
+          { he: "רישום החברה + רישיון עסקי", en: "Company registration + trade license" },
+        ],
+      },
+      {
+        name: { he: "Family Visa", en: "Family Visa" },
+        description: {
+          he: "ספונסרשיפ לבני משפחה — בן/בת זוג, ילדים, הורים.",
+          en: "Sponsorship for family members — spouse, children, parents.",
+        },
+        duration: "Same as sponsor's visa",
+        requirements: [
+          { he: "שכר מינימלי AED 4,000+ (או AED 3,000 + דיור)", en: "Minimum salary AED 4,000+ (or AED 3,000 + housing)" },
+          { he: "חוזה שכירות (Ejari)", en: "Tenancy contract (Ejari)" },
+          { he: "תעודת נישואין/לידה מאומתת", en: "Attested marriage/birth certificate" },
+        ],
+      },
+    ],
+    process: [
+      {
+        title: { he: "בחירת מסלול וסוג רישיון", en: "Choose Pathway & License Type" },
+        description: { he: "Employment, Freelancer, Free Zone, או Golden Visa — כל אחד עם תהליך שונה.", en: "Employment, Freelancer, Free Zone, or Golden Visa — each with a different process." },
+      },
+      {
+        title: { he: "הגשת בקשה ואישור ראשוני", en: "Application & Initial Approval" },
+        description: { he: "Entry Permit או Change of Status — תלוי אם נמצאים בארץ או בחו\"ל.", en: "Entry Permit or Change of Status — depends on whether inside or outside the UAE." },
+      },
+      {
+        title: { he: "בדיקה רפואית + Emirates ID", en: "Medical Test + Emirates ID" },
+        description: { he: "בדיקה רפואית במרכז מוסמך + צילום ביומטרי ל-Emirates ID.", en: "Medical test at authorized center + biometrics for Emirates ID." },
+      },
+      {
+        title: { he: "הטבעת ויזה (Visa Stamping)", en: "Visa Stamping" },
+        description: { he: "הטבעת אשרת שהייה בדרכון — בד\"כ תוך 2–5 ימי עבודה.", en: "Residence visa stamped in passport — usually within 2–5 business days." },
+      },
+      {
+        title: { he: "פתיחת חשבון בנק + התיישבות", en: "Bank Account + Settlement" },
+        description: { he: "עם Emirates ID ניתן לפתוח חשבון, לשכור דירה ולהתחיל לעבוד.", en: "With Emirates ID, open a bank account, rent an apartment, and start working." },
+      },
+    ],
+  },
 ];
 
 export function getCountryBySlug(slug: string): Country | undefined {
