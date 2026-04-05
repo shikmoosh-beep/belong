@@ -1,12 +1,18 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { InlineWidget } from "react-calendly";
+import Cal from "@calcom/embed-react";
 import { useLocale } from "next-intl";
 
-const CALENDLY_URL = process.env.NEXT_PUBLIC_CALENDLY_URL;
+const CAL_URL = process.env.NEXT_PUBLIC_CALENDLY_URL;
 const WHATSAPP_NUMBER = "972765384386";
 const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Hi, I'd like to book a consultation")}`;
+
+function getCalLink(url: string): string {
+  // Extract the path from full cal.com URL (e.g. "shikma-aharon-david-emqwg1/30min")
+  const match = url.match(/cal\.com\/(.+)/);
+  return match ? match[1] : url;
+}
 
 export default function BookingPage() {
   const t = useTranslations("book");
@@ -22,17 +28,15 @@ export default function BookingPage() {
           <p className="mt-3 text-lg text-gray-600">{t("subtitle")}</p>
         </div>
 
-        {CALENDLY_URL ? (
-          <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-            <InlineWidget
-              url={CALENDLY_URL}
-              styles={{ height: "650px", minWidth: "320px" }}
-              pageSettings={{
-                backgroundColor: "ffffff",
-                primaryColor: "0f766e",
-                textColor: "134e4a",
+        {CAL_URL ? (
+          <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden p-2">
+            <Cal
+              calLink={getCalLink(CAL_URL)}
+              style={{ width: "100%", height: "650px", overflow: "auto" }}
+              config={{
+                theme: "light",
+                layout: "month_view",
               }}
-              prefill={{}}
             />
           </div>
         ) : (
